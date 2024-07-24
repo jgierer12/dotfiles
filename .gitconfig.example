@@ -1,0 +1,8 @@
+[user]
+	name = Your Name
+	email = your@email.com
+
+[credential "https://github.com"]
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/home/linuxbrew/.linuxbrew/bin/gh auth git-credential

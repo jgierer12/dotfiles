@@ -38,3 +38,14 @@ then use GNU stow to create symlinks
 ```
 $ stow .
 ```
+
+## Git config
+
+To add your git credentials, copy the example config
+
+```
+$ cp ~/.gitconfig{.example,}
+```
+
+then edit `~/.gitconfig` and add your own credentials. The rest of the config
+is stored in `~/.config/git/config`.
