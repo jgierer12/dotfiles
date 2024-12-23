@@ -6,7 +6,6 @@
 
 ```
 git clone git@github.com:jgierer12/dotfiles.git $HOME/dotfiles
-cd $HOME/dotfiles
 ```
 
 2. Install brew packages
@@ -27,7 +26,6 @@ stow . -d $HOME/dotfiles -t $HOME
 
 ```
 sudo usermod --shell $(command -v fish) $USER
-exit
 ```
 
 5. Install pnpm packages
