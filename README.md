@@ -5,7 +5,7 @@
 1. Download or clone the repo into your home directory
 
 ```
-git clone git@github.com:jgierer12/dotfiles.git $HOME/dotfiles
+git clone https://github.com/jgierer12/dotfiles.git $HOME/dotfiles
 ```
 
 2. Install brew packages
