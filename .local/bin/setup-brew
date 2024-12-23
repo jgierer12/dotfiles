@@ -1,0 +1,54 @@
+#!/bin/bash
+
+# Install Homebrew
+if ! command -v brew > /dev/null; then
+	echo "Installing Homebrew..."
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
+# Update Homebrew
+brew update
+
+# Compilers & Runtimes
+brew install node
+brew install deno
+brew install rustup
+
+# Language Tools
+brew install pnpm
+brew install vscode-langservers-extracted
+brew install lua-language-server
+brew install stylua
+brew install marksman
+
+# Shell
+brew install fish
+brew install atuin
+brew install starship
+brew install zoxide
+
+# Utility
+brew install fzf
+brew install ripgrep
+brew install fd
+brew install sd
+brew install stow
+brew install btop
+brew install eza
+brew install ncdu
+brew install httpie
+brew install rclone
+brew install restic
+brew install yt-dlp
+brew install glow
+
+# Git
+brew install git
+brew install gh
+brew install lazygit
+brew install git-delta
+
+# Editors
+brew install neovim
+brew install helix
+
