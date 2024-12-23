@@ -1,51 +1,42 @@
-# My dotfiles
-
-This directory contains the dotfiles for my system
-
-## Requirements
-
-Ensure you have the following installed on your system
-
-### Homebrew
-
-```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-### Git
-
-```
-brew install git
-```
-
-### Stow
-
-```
-brew install stow
-```
+# dotfiles
 
 ## Installation
 
-First, check out the dotfiles repo in your $HOME directory using git
+1. Download or clone the repo into your home directory
 
 ```
-$ git clone git@github.com/jgierer12/dotfiles.git
-$ cd dotfiles
+git clone git@github.com:jgierer12/dotfiles.git $HOME/dotfiles
+cd $HOME/dotfiles
 ```
 
-then use GNU stow to create symlinks
+2. Install brew and pnpm packages
+
+⚠️  Make sure you understand what these scripts are doing before running them!
 
 ```
-$ stow .
+$HOME/dotfiles/.local/bin/setup-brew
+$HOME/dotfiles/.local/bin/setup-pnpm
 ```
 
-## Git config
-
-To add your git credentials, copy the example config
+3. Use stow to symlink everything from the dotfiles directory into the relevant places
 
 ```
-$ cp ~/.gitconfig{.example,}
+stow . -d $HOME/dotfiles -t $HOME
 ```
 
-then edit `~/.gitconfig` and add your own credentials. The rest of the config
-is stored in `~/.config/git/config`.
+4. Change default shell to fish and restart shell
+
+```
+sudo usermod --shell $(command -v fish) $USER
+exit
+```
+
+5. To add your git credentials, copy the example config
+
+```
+cp ~/.gitconfig{.example,}
+```
+
+then edit `~/.gitconfig` and add your own credentials.
+The rest of the config is stored in `~/.config/git/config`.
+
