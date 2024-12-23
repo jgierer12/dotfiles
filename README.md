@@ -9,13 +9,12 @@ git clone git@github.com:jgierer12/dotfiles.git $HOME/dotfiles
 cd $HOME/dotfiles
 ```
 
-2. Install brew and pnpm packages
+2. Install brew packages
 
-⚠️  Make sure you understand what these scripts are doing before running them!
+⚠️  Make sure you understand what this script is doing before running it!
 
 ```
 $HOME/dotfiles/.local/bin/setup-brew
-$HOME/dotfiles/.local/bin/setup-pnpm
 ```
 
 3. Use stow to symlink everything from the dotfiles directory into the relevant places
@@ -31,7 +30,15 @@ sudo usermod --shell $(command -v fish) $USER
 exit
 ```
 
-5. To add your git credentials, copy the example config
+5. Install pnpm packages
+
+⚠️  Make sure you understand what this script is doing before running it!
+
+```
+setup-pnpm
+```
+
+6. To add your git credentials, copy the example config
 
 ```
 cp ~/.gitconfig{.example,}
