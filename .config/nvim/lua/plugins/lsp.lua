@@ -52,37 +52,6 @@ return {
 					vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "[r]ename symbol" })
 					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[c]ode [a]ction" })
 
-					-- The following two autocommands are used to highlight references of the
-					-- word under your cursor when your cursor rests there for a little while.
-					--    See `:help CursorHold` for information about when this is executed
-					--
-					-- When you move your cursor, the highlights will be cleared (the second autocommand).
-					if client.supports_method(vim.lsp.protocol.Methods.textDocument_documentHighlight) then
-						local highlight_augroup =
-							vim.api.nvim_create_augroup("lsp_document_highlight", { clear = false })
-						vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
-							buffer = args.buf,
-							group = highlight_augroup,
-							callback = vim.lsp.buf.document_highlight,
-						})
-
-						vim.api.nvim_create_autocmd({ "CursorMoved", "CursorMovedI" }, {
-							buffer = args.buf,
-							group = highlight_augroup,
-							callback = vim.lsp.buf.clear_references,
-						})
-
-						vim.api.nvim_create_autocmd("LspDetach", {
-							callback = function(args2)
-								vim.lsp.buf.clear_references()
-								vim.api.nvim_clear_autocmds({
-									group = highlight_augroup,
-									buffer = args2.buf,
-								})
-							end,
-						})
-					end
-
 					-- Change diagnostic symbols in the sign column (gutter)
 					local signs = { ERROR = "", WARN = "", INFO = "", HINT = "" }
 					local diagnostic_signs = {}
