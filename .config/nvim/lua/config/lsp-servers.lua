@@ -10,6 +10,8 @@ return {
 			},
 		},
 	},
+	astro = {},
+	ts_ls = {},
 	denols = {},
 	rust_analyzer = {},
 	marksman = {},
