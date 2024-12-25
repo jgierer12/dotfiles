@@ -18,7 +18,7 @@ set -x SUDO_EDITOR $EDITOR
 
 # Aliases
 alias ls "eza -a"
-alias tree "eza -aT"
+alias tree "eza -aT -I '.git|node_modules'"
 alias e $EDITOR
 alias dots "stow . -d $HOME/dotfiles -t $HOME"
 

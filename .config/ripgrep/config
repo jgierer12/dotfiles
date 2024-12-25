@@ -1,5 +1,5 @@
 # Search hidden files and dirs except .git
 --hidden
 --no-ignore
---glob=!**/.git/*
+--glob=!**/{.git,node_modules}/*
 
