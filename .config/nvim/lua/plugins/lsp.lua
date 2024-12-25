@@ -15,14 +15,32 @@ return {
 				},
 			},
 		},
-		opts = {
-			servers = require("config.lsp-servers"),
-		},
-		config = function(_, opts)
+		config = function()
 			local lspconfig = require("lspconfig")
-			for server, config in pairs(opts.servers) do
-				-- passing config.capabilities to blink.cmp merges with the capabilities in your
-				-- `opts[server].capabilities, if you've defined it
+			local servers = {
+				lua_ls = {
+					settings = {
+						Lua = {
+							diagnostics = {
+								disable = {
+									"missing-fields",
+								},
+							},
+						},
+					},
+				},
+				astro = {},
+				ts_ls = {
+					root_dir = lspconfig.util.root_pattern("package.json"),
+					single_file_support = false,
+				},
+				denols = {
+					root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+				},
+				rust_analyzer = {},
+				marksman = {},
+			}
+			for server, config in pairs(servers) do
 				config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
 				lspconfig[server].setup(config)
 			end
