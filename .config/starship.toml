@@ -1,0 +1,20 @@
+[custom.shell]
+command = "echo $STARSHIP_SHELL"
+when = """ test "$STARSHIP_SHELL" != "fish" """
+style = "dimmed blue"
+format = "[$output]($style)"
+shell = ["bash"]
+
+[git_status]
+untracked = '[ $count](bold yellow) '
+staged = '[ $count](bold green) '
+stashed = "[ ](cyan) "
+deleted = '[ $count](bold red) '
+modified = '[ $count](bold blue) '
+behind = '[ ](bold purple) '
+ahead = '[ ](bold purple) '
+format = '([$all_status$ahead_behind]($style))'
+
+[git_branch]
+symbol = " "
+
