@@ -1,0 +1,13 @@
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+customCommands:
+  - key: b
+    command: gh browse "{{ if .SelectedFile }}{{ .SelectedFile.Name }}{{ else }}{{ .SelectedPath }}{{ end }}"
+    context: files
+    description: Browse file on GitHub
+  - key: b
+    command: gh browse "{{ .SelectedLocalCommit.Sha }}"
+    context: commits
+    description: Browse commit on GitHub
