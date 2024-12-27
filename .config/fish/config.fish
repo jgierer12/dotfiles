@@ -17,10 +17,28 @@ set -x EDITOR (which nvim)
 set -x SUDO_EDITOR $EDITOR
 
 # Aliases
-alias ls "eza -a"
-alias tree "eza -aT -I '.git|node_modules'"
-alias e $EDITOR
+alias mv "mv -iv"
+alias cp "cp -riv"
+alias mkdir "mkdir -vp"
+alias ls "eza --all --icons --group-directories-first"
+alias tree "ls --tree --ignore-glob '.git|node_modules'"
+alias edit $EDITOR
 alias dots "stow . -d $HOME/dotfiles -t $HOME"
+
+# Abbreviations
+abbr --add --set-cursor c "calc '%'"
+abbr --add e "edit"
+abbr --add se "sudoedit"
+abbr --add ll "ls -l"
+
+# Git
+abbr --add lg "lazygit"
+abbr --add --set-cursor gc "git commit -m '%'"
+abbr --add --set-cursor gca "git commit -am '%'"
+abbr --add ga "git add"
+abbr --add gaa "git add ."
+abbr --add gp "git pull"
+abbr --add gP "git push"
 
 # Greeting
 function fish_greeting
