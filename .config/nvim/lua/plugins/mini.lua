@@ -20,7 +20,13 @@ return {
 
 			require("mini.surround").setup()
 
-			require("mini.pairs").setup()
+			require("mini.pairs").setup({
+				mappings = {
+					-- don't add more backticks after the first pair
+					-- makes markdown codeblocks ``` easier to type
+					["`"] = { neigh_pattern = "[^\\`]." },
+				},
+			})
 
 			require("mini.bracketed").setup()
 		end,
