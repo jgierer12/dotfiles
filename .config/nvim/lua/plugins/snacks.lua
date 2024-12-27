@@ -28,5 +28,16 @@ return {
 			end,
 			desc = "Open [T]odo List",
 		},
+		{
+			"\\|",
+			function()
+				if Snacks.indent.enabled then
+					Snacks.indent.disable()
+				else
+					Snacks.indent.enable()
+				end
+			end,
+			desc = "Toggle indent guides",
+		},
 	},
 }
