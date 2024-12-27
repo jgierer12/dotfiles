@@ -5,7 +5,7 @@ return {
 	---@type snacks.Config
 	opts = {
 		styles = {
-			float = {
+			lazygit = {
 				border = "rounded",
 				backdrop = false,
 			},
@@ -44,6 +44,13 @@ return {
 				end
 			end,
 			desc = "Toggle indent guides",
+		},
+		{
+			"<leader>z",
+			function()
+				Snacks.zen.zen()
+			end,
+			desc = "[z]en mode",
 		},
 	},
 }
