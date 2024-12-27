@@ -42,6 +42,7 @@ brew install restic
 brew install yt-dlp
 brew install glow
 brew install fastfetch
+brew install numbat
 
 # Git
 brew install git
