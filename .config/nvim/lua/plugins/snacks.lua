@@ -1,5 +1,6 @@
 return {
 	"folke/snacks.nvim",
+	priority = 1000,
 	lazy = false,
 	---@type snacks.Config
 	opts = {
@@ -9,10 +10,15 @@ return {
 				backdrop = false,
 			},
 		},
+		words = { enabled = true },
+		scroll = {
+			enabled = true,
+			animate = {
+				duration = 10,
+				easing = "inOutQuad",
+			},
+		},
 	},
-	config = function()
-		Snacks.words.enable()
-	end,
 	keys = {
 		{
 			"<leader>g",
