@@ -14,7 +14,7 @@ return {
 		scroll = {
 			enabled = true,
 			animate = {
-				duration = 10,
+				duration = { step = 10, total = 200 },
 				easing = "inOutQuad",
 			},
 		},
