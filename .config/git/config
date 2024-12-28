@@ -22,6 +22,7 @@
 [delta]
 	navigate = true
 	line-numbers = true
+	tabs = 4
 	features = catppuccin-mocha
 
 [merge]
