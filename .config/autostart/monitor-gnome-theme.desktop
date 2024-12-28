@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Monitor GNOME Theme
+Comment=Monitors changes in GNOME theme (light/dark) and adjusts theme for various CLI tools accordingly
+Exec=bash -c "$HOME/.local/bin/monitor-gnome-theme"
+Type=Application
+X-GNOME-Autostart-enabled=true

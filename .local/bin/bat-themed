@@ -1,0 +1,11 @@
+#!/bin/bash
+theme_store="$HOME/.local/state/gnome_theme"
+
+if [ ! -e $theme_store ]; then
+	bat $@
+elif [ $(cat $theme_store) = "light" ]; then
+	bat --theme="Catppuccin Latte" $@
+else
+	bat --theme="Catppuccin Mocha" $@
+fi
+

@@ -1,7 +1,7 @@
 git:
   paging:
     colorArg: always
-    pager: delta --dark --paging=never
+    pager: delta-themed --paging=never
 customCommands:
   - key: b
     command: gh browse "{{ if .SelectedFile }}{{ .SelectedFile.Name }}{{ else }}{{ .SelectedPath }}{{ end }}"
