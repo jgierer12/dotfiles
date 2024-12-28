@@ -25,6 +25,9 @@ return {
 					["ui-select"] = {
 						require("telescope.themes").get_dropdown({}),
 					},
+					smart_open = {
+						match_algorithm = "fzf",
+					},
 				},
 			})
 			telescope.load_extension("fzf")
