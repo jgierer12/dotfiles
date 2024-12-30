@@ -13,6 +13,7 @@ brew update
 brew install node
 brew install deno
 brew install rustup
+brew install gleam
 
 # Language Tools
 brew install pnpm
