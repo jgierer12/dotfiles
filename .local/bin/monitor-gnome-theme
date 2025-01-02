@@ -37,6 +37,7 @@ apply() {
 	echo $theme > $theme_store
 	apply_nvim $theme
 	apply_fish $theme
+	apply_btop $theme
 }
 
 apply_nvim() {
@@ -58,6 +59,17 @@ apply_fish() {
 		fish -c "yes | fish_config theme save 'Catppuccin Latte'"
 	else
 		fish -c "yes | fish_config theme save 'Catppuccin Mocha'"
+	fi
+}
+
+apply_btop() {
+	local theme=$1
+	local btop_config="$HOME/.config/btop/btop.conf"
+
+	if [ $theme = "light" ]; then
+		sed -ie "s/adapta/adwaita/" $btop_config
+	else
+		sed -ie "s/adwaita/adapta/" $btop_config
 	fi
 }
 
