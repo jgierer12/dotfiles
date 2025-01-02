@@ -27,6 +27,10 @@ alias dots "stow . -d $HOME/dotfiles -t $HOME"
 alias bat "bat-themed"
 alias delta "delta-themed"
 
+if test "$TERM" = "xterm-kitty"
+	alias ssh "kitten ssh"
+end
+
 # Abbreviations
 abbr --add --set-cursor c "calc '%'"
 abbr --add e "edit"
