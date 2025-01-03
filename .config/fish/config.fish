@@ -16,6 +16,9 @@ fish_add_path $HOME/.local/bin
 set -x EDITOR (which nvim)
 set -x SUDO_EDITOR $EDITOR
 
+# Keybinds
+fish_vi_key_bindings
+
 # Aliases
 alias mv "mv -iv"
 alias cp "cp -riv"
@@ -36,6 +39,7 @@ abbr --add --set-cursor c "calc '%'"
 abbr --add e "edit"
 abbr --add se "sudoedit"
 abbr --add ll "ls -l"
+abbr --add qq "exit"
 
 # Git
 abbr --add lg "lazygit"
