@@ -18,6 +18,7 @@ return {
 				easing = "inOutQuad",
 			},
 		},
+		bigfile = { enabled = true },
 	},
 	keys = {
 		{
