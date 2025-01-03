@@ -17,13 +17,34 @@ return {
 							icon = "",
 						},
 						"diff",
-						"diagnostics",
 					},
 					lualine_c = {
+						"diagnostics",
+						"%=", -- center
 						{
 							"filename",
-							path = 1,
+							file_status = true,
+							path = 0,
+							shorting_target = 40,
+							symbols = {
+								modified = " ",
+								readonly = " ",
+								unnamed = "[No Name]",
+								newfile = "[New]",
+							},
 						},
+					},
+					lualine_x = {
+						"encoding",
+						{
+							"fileformat",
+							symbols = {
+								unix = " LF",
+								dos = " CRLF",
+								mac = " CR",
+							},
+						},
+						"filetype",
 					},
 				},
 			})
