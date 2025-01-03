@@ -36,7 +36,6 @@ return {
 
 			local builtin = require("telescope.builtin")
 			vim.keymap.set("n", "<leader>ff", telescope.extensions.smart_open.smart_open, { desc = "[f]ind [f]iles" })
-			vim.keymap.set("n", "<leader>fr", builtin.oldfiles, { desc = "[f]ind [r]ecent files" })
 			vim.keymap.set("n", "<leader>fg", builtin.live_grep, { desc = "[f]ind by [g]rep" })
 			vim.keymap.set("n", "<leader>fb", builtin.buffers, { desc = "[f]ind [b]uffers" })
 			vim.keymap.set("n", "<leader>fh", builtin.help_tags, { desc = "[f]ind [h]elp" })

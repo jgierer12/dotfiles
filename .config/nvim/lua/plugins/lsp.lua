@@ -67,6 +67,7 @@ return {
 					vim.keymap.set("n", "gd", builtin.lsp_definitions, { desc = "[g]oto [d]efinition" })
 					vim.keymap.set("n", "<leader>fr", builtin.lsp_references, { desc = "[f]ind [r]eferences" })
 					vim.keymap.set("n", "<leader>fs", builtin.lsp_document_symbols, { desc = "[f]ind [s]symbols" })
+					vim.keymap.set("n", "<leader>fd", builtin.diagnostics, { desc = "[f]ind [d]iagnostics" })
 
 					vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "[r]ename symbol" })
 					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[c]ode [a]ction" })
