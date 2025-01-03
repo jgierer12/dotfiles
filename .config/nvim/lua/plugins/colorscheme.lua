@@ -6,6 +6,10 @@ return {
 		priority = 1000,
 		config = function()
 			require("catppuccin").setup({
+				dim_inactive = {
+					enabled = true,
+					percentage = 0.1,
+				},
 				integrations = {
 					blink_cmp = true,
 					snacks = true,
