@@ -14,10 +14,10 @@
 	sort = -committerdate
 
 [core]
-	pager = delta-themed
+	pager = delta
 
 [interactive]
-	diffFilter = delta-themed --color-only
+	diffFilter = delta --color-only
 
 [delta]
 	navigate = true

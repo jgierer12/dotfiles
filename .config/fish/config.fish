@@ -27,8 +27,6 @@ alias ls "eza --all --icons --group-directories-first"
 alias tree "ls --tree --ignore-glob '.git|node_modules'"
 alias edit $EDITOR
 alias dots "stow . -d $HOME/dotfiles -t $HOME"
-alias bat "bat-themed"
-alias delta "delta-themed"
 
 if test "$TERM" = "xterm-kitty"
 	alias ssh "kitten ssh"
