@@ -9,6 +9,10 @@ return {
 				border = "rounded",
 				backdrop = false,
 			},
+			snacks_image = {
+				relative = "editor",
+				col = -1,
+			},
 		},
 		words = { enabled = true },
 		scroll = {
