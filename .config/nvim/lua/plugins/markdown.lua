@@ -5,6 +5,10 @@ return {
 		version = "*",
 		---@module 'render-markdown'
 		---@type render.md.UserConfig
-		opts = {},
+		opts = {
+			completions = {
+				lsp = { enabled = true },
+			},
+		},
 	},
 }
