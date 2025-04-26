@@ -24,6 +24,12 @@ return {
 				frecency = true,
 			},
 		},
+		image = {
+			enabled = true,
+			doc = {
+				inline = false,
+			},
+		},
 	},
 	keys = {
 		{
