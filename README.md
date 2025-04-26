@@ -39,7 +39,7 @@ setup-pnpm
 6. To add your git credentials, copy the example config
 
 ```
-cp ~/.gitconfig{.example,}
+cp ~/.gitconfig{.example,} --dereference
 ```
 
 then edit `~/.gitconfig` and add your own credentials.
