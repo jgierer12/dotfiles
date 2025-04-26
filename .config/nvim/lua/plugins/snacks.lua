@@ -30,6 +30,13 @@ return {
 				inline = false,
 			},
 		},
+		indent = {
+			enabled = true,
+			animate = {
+				duration = { step = 10, total = 200 },
+				easing = "inOutQuad",
+			},
+		},
 	},
 	keys = {
 		{
