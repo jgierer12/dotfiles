@@ -44,6 +44,16 @@ abbr --add se "sudoedit"
 abbr --add ll "ls -l"
 abbr --add qq "exit"
 
+# Just
+abbr --add j "just"
+abbr --add jt "just test"
+abbr --add jb "just build"
+abbr --add js "just start"
+abbr --add jd "just dev"
+abbr --add jf "just format"
+abbr --add jl "just lint"
+abbr --add ji "just install"
+
 # Git
 abbr --add lg "lazygit"
 abbr --add --set-cursor gc "git commit -m '%'"
