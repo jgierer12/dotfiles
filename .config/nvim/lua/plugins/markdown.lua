@@ -9,6 +9,10 @@ return {
 			completions = {
 				lsp = { enabled = true },
 			},
+			code = {
+				border = "thick",
+				left_pad = 2,
+			},
 		},
 	},
 }
