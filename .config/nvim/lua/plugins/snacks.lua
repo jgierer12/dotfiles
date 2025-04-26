@@ -27,6 +27,13 @@ return {
 			matcher = {
 				frecency = true,
 			},
+			win = {
+				input = {
+					keys = {
+						["<esc>"] = { "close", mode = { "n", "i" } },
+					},
+				},
+			},
 		},
 		image = {
 			enabled = true,
