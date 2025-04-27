@@ -11,7 +11,7 @@ return {
 						-- See the configuration section for more details
 						-- Load luvit types when the `vim.uv` word is found
 						{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-						{ path = "snacks.nvim",        words = { "Snacks" } },
+						{ path = "snacks.nvim", words = { "Snacks" } },
 					},
 				},
 			},
@@ -64,7 +64,6 @@ return {
 						})
 					end
 
-					vim.keymap.set("n", "<leader>cr", vim.lsp.buf.rename, { desc = "[r]ename symbol" })
 					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[c]ode [a]ction" })
 
 					-- Change diagnostic symbols in the sign column (gutter)
@@ -77,5 +76,17 @@ return {
 				end,
 			})
 		end,
+	},
+	{
+		"saecki/live-rename.nvim",
+		keys = {
+			{
+				"<leader>cr",
+				function()
+					require("live-rename").rename({ insert = true })
+				end,
+				desc = "[r]ename symbol",
+			},
+		},
 	},
 }
