@@ -1,0 +1,12 @@
+theme = catppuccin-mocha
+cursor-color = #cdd6f4
+cursor-text = #1e1e2e
+
+font-family = JetBrainsMono Nerd Font
+
+adjust-cursor-thickness = 2
+
+mouse-hide-while-typing = true
+
+gtk-titlebar-hide-when-maximized = true
+adw-toolbar-style = raised-border
