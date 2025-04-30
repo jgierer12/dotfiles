@@ -4,50 +4,49 @@ return {
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
-		config = function()
-			require("lualine").setup({
-				options = {
-					component_separators = "",
-					section_separators = { left = "", right = "" },
+		opts = {
+			options = {
+				component_separators = "",
+				section_separators = { left = "", right = "" },
+			},
+			sections = {
+				lualine_a = {
+					"mode",
 				},
-				sections = {
-					lualine_b = {
-						{
-							"branch",
-							icon = "",
-						},
-						"diff",
+				lualine_b = {
+					{
+						"branch",
+						icon = "",
 					},
-					lualine_c = {
-						"diagnostics",
-						"%=", -- center
-						{
-							"filename",
-							file_status = true,
-							path = 0,
-							shorting_target = 40,
-							symbols = {
-								modified = " ",
-								readonly = " ",
-								unnamed = "[No Name]",
-								newfile = "[New]",
-							},
+					"diff",
+				},
+				lualine_c = {
+					"diagnostics",
+					"%=", -- center
+					{
+						"filename",
+						file_status = true,
+						path = 1,
+						shorting_target = 40,
+						symbols = {
+							modified = " ",
+							readonly = " ",
+							unnamed = "[No Name]",
+							newfile = "[New]",
 						},
-					},
-					lualine_x = {
-						"encoding",
-						{
-							"fileformat",
-							symbols = {
-								unix = " LF",
-								dos = " CRLF",
-								mac = " CR",
-							},
-						},
-						"filetype",
 					},
 				},
-			})
-		end,
+				lualine_x = {
+					"encoding",
+					"filetype",
+				},
+				lualine_y = {
+					"progress",
+				},
+				lualine_z = {
+					"location",
+				},
+			},
+		},
 	},
 }
