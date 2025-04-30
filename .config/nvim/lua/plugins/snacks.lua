@@ -29,13 +29,6 @@ return {
 				cwd_bonus = true,
 				sort_empty = true,
 			},
-			win = {
-				input = {
-					keys = {
-						["<esc>"] = { "close", mode = { "n", "i" } },
-					},
-				},
-			},
 		},
 		image = {
 			enabled = true,
