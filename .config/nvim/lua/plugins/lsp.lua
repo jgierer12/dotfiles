@@ -41,6 +41,22 @@ return {
 				rust_analyzer = {},
 				marksman = {},
 				gleam = {},
+				harper_ls = {
+					filetypes = { "markdown" },
+					settings = {
+						["harper-ls"] = {
+							userDictPath = vim.fn.expand("~/.config/dictionaries/en.txt"),
+							isolateEnglish = true,
+							linters = {
+								ToDoHypen = false,
+								SentenceCapitalization = false,
+							},
+							markdown = {
+								IgnoreLinkTitle = true,
+							},
+						},
+					},
+				},
 			}
 			for server, config in pairs(servers) do
 				config.capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
