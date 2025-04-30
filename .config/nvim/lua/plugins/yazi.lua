@@ -1,22 +1,24 @@
 return {
-	"mikavilpas/yazi.nvim",
-	event = "VeryLazy",
-	keys = {
-		{
-			"<leader>e",
-			"<cmd>Yazi<cr>",
-			desc = "Open yazi at the current file",
+	{
+		"mikavilpas/yazi.nvim",
+		event = "VeryLazy",
+		keys = {
+			{
+				"<leader>e",
+				"<cmd>Yazi<cr>",
+				desc = "Open yazi at the current file",
+			},
+			{
+				"<leader>E",
+				"<cmd>Yazi cwd<cr>",
+				desc = "Open the file manager in nvim's working directory",
+			},
 		},
-		{
-			"<leader>E",
-			"<cmd>Yazi cwd<cr>",
-			desc = "Open the file manager in nvim's working directory",
-		},
-	},
-	opts = {
-		open_for_directories = true,
-		keymaps = {
-			show_help = "<f1>",
+		opts = {
+			open_for_directories = true,
+			keymaps = {
+				show_help = "<f1>",
+			},
 		},
 	},
 }
