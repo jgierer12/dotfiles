@@ -43,8 +43,8 @@ return {
 						max_items = 8,
 						min_keyword_length = 3,
 						opts = {
-							dictionary_directories = {
-								vim.fn.expand("~/.config/dictionaries"),
+							dictionary_files = {
+								vim.fn.expand("~/.config/dictionaries/en.txt"),
 							},
 						},
 					},
