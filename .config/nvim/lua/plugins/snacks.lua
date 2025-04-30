@@ -26,6 +26,8 @@ return {
 		picker = {
 			matcher = {
 				frecency = true,
+				cwd_bonus = true,
+				sort_empty = true,
 			},
 			win = {
 				input = {
