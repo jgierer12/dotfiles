@@ -12,6 +12,10 @@ return {
 			code = {
 				border = "thick",
 				left_pad = 2,
+				right_pad = 4,
+				language_name = false,
+				position = "right",
+				width = "block",
 			},
 		},
 	},
