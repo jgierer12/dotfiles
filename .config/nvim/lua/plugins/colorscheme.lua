@@ -14,6 +14,7 @@ return {
 					blink_cmp = true,
 					snacks = true,
 					which_key = true,
+					noice = true,
 				},
 			})
 
