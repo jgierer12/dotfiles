@@ -2,6 +2,7 @@ return {
 	{
 		"echasnovski/mini.files",
 		version = "*",
+		enabled = false,
 		opts = {
 			options = {
 				permanent_delete = false,
