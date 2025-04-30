@@ -89,14 +89,16 @@ return {
 		{
 			"<leader>fp",
 			function()
-				Snacks.picker.pickers()
+				Snacks.picker.pickers({
+					layout = "select",
+				})
 			end,
 			desc = "[f]ind [p]icker",
 		},
 		{
 			"<leader>ff",
 			function()
-				Snacks.picker.smart({
+				Snacks.picker.files({
 					hidden = true,
 					ignored = true,
 				})
@@ -128,7 +130,25 @@ return {
 		{
 			"<leader>fb",
 			function()
-				Snacks.picker.buffers()
+				Snacks.picker.buffers({
+					on_show = function()
+						-- start in normal mode
+						vim.cmd.stopinsert()
+					end,
+					sort_lastused = true,
+					win = {
+						input = {
+							keys = {
+								["d"] = "bufdelete",
+							},
+						},
+						list = {
+							keys = {
+								["d"] = "bufdelete",
+							},
+						},
+					},
+				})
 			end,
 			desc = "[f]ind [b]uffers",
 		},
@@ -142,14 +162,18 @@ return {
 		{
 			"<leader>fk",
 			function()
-				Snacks.picker.keymaps()
+				Snacks.picker.keymaps({
+					layout = "select",
+				})
 			end,
 			desc = "[f]ind [k]eymaps",
 		},
 		{
 			"<leader>fc",
 			function()
-				Snacks.picker.commands()
+				Snacks.picker.commands({
+					layout = "select",
+				})
 			end,
 			desc = "[f]ind [c]ommands",
 		},
@@ -170,9 +194,20 @@ return {
 		{
 			"<leader>fd",
 			function()
-				Snacks.picker.diagnostics()
+				Snacks.picker.diagnostics_buffer({
+					layout = "ivy_split",
+				})
 			end,
-			desc = "[f]ind [d]iagnostics",
+			desc = "[f]ind [d]iagnostics (buffer)",
+		},
+		{
+			"<leader>fD",
+			function()
+				Snacks.picker.diagnostics({
+					layout = "ivy_split",
+				})
+			end,
+			desc = "[f]ind [d]iagnostics (workspace)",
 		},
 		{
 			"<leader>fr",
@@ -186,7 +221,14 @@ return {
 			function()
 				Snacks.picker.lsp_symbols()
 			end,
-			desc = "[f]ind [s]ymbols",
+			desc = "[f]ind [s]ymbols (buffer)",
+		},
+		{
+			"<leader>fS",
+			function()
+				Snacks.picker.lsp_workspace_symbols()
+			end,
+			desc = "[f]ind [s]ymbols (workspace)",
 		},
 		{
 			"<leader>fq",
