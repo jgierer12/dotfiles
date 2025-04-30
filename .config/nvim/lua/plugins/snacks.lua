@@ -43,6 +43,13 @@ return {
 				easing = "inOutQuad",
 			},
 		},
+		statuscolumn = {
+			left = { "mark", "sign", "fold" },
+			right = { "git" },
+			folds = {
+				open = true,
+			},
+		},
 	},
 	keys = {
 		{
