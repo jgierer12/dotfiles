@@ -4,6 +4,8 @@ vim.opt.shiftwidth = 4
 vim.opt.number = true
 
 vim.opt.wrap = true
+vim.opt.textwidth = 80
+vim.opt.colorcolumn = "+0"
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
