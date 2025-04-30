@@ -1,5 +1,5 @@
 vim.keymap.set("n", "<leader>ww", "<cmd>w<cr>", { desc = "[w]rite" })
-vim.keymap.set("n", "<leader>wq", "<cmd>wq<cr>", { desc = "[w]rite and [q]uit" })
+vim.keymap.set("n", "<leader>wq", "<cmd>wqa<cr>", { desc = "[w]rite and [q]uit all" })
 vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "[q]uit" })
 vim.keymap.set("n", "<leader>qa", "<cmd>qa<cr>", { desc = "[q]uit [a]ll" })
 
