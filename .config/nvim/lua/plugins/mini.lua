@@ -39,13 +39,6 @@ return {
 			})
 
 			require("mini.bracketed").setup()
-
-			require("mini.files").setup({
-				windows = {
-					preview = true,
-				},
-			})
-			vim.keymap.set("n", "-", MiniFiles.open, { desc = "Open mini.files" })
 		end,
 	},
 }
