@@ -3,6 +3,7 @@ cursor-color = #cdd6f4
 cursor-text = #1e1e2e
 
 font-family = JetBrainsMono Nerd Font
+font-size = 13
 
 adjust-cursor-thickness = 2
 
@@ -10,3 +11,4 @@ mouse-hide-while-typing = true
 
 gtk-titlebar-hide-when-maximized = true
 adw-toolbar-style = raised-border
+window-padding-y = 6,0
