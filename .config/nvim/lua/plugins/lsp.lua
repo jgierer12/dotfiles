@@ -70,16 +70,6 @@ return {
 						return
 					end
 
-					if client.supports_method("textDocument/formatting") then
-						-- Format the current buffer on save
-						vim.api.nvim_create_autocmd("BufWritePre", {
-							buffer = args.buf,
-							callback = function()
-								vim.lsp.buf.format({ bufnr = args.buf, id = client.id })
-							end,
-						})
-					end
-
 					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[c]ode [a]ction" })
 
 					-- Change diagnostic symbols in the sign column (gutter)
