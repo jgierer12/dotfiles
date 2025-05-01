@@ -1,3 +1,28 @@
+local prettier_filetypes = {
+	"javascript",
+	"javascriptreact",
+	"typescript",
+	"typescriptreact",
+	"svelte",
+	"css",
+	"html",
+	"handlebars",
+	"json",
+	"jsonc",
+	"yaml",
+	"markdown",
+	"graphql",
+}
+
+local formatters = {
+	lua = { "stylua" },
+	rust = { "rustfmt", lsp_format = "fallback" },
+}
+
+for _, ft in ipairs(prettier_filetypes) do
+	formatters[ft] = { "prettierd", "prettier", stop_after_first = true }
+end
+
 return {
 	{
 		"stevearc/conform.nvim",
@@ -21,11 +46,7 @@ return {
 					lsp_format = lsp_format_opt,
 				}
 			end,
-			formatters_by_ft = {
-				lua = { "stylua" },
-				rust = { "rustfmt", lsp_format = "fallback" },
-				javascript = { "prettierd", "prettier", stop_after_first = true },
-			},
+			formatters_by_ft = formatters,
 		},
 	},
 }
