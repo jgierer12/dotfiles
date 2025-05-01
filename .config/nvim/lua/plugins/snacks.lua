@@ -24,13 +24,6 @@ return {
 				},
 			},
 			bigfile = { enabled = true },
-			picker = {
-				matcher = {
-					frecency = true,
-					cwd_bonus = true,
-					sort_empty = true,
-				},
-			},
 			image = {
 				enabled = true,
 				doc = {
@@ -86,7 +79,7 @@ return {
 				desc = "[z]en mode",
 			},
 
-			-- Pickers
+			--#region Pickers
 			{
 				"<leader>fp",
 				function()
@@ -100,6 +93,11 @@ return {
 				"<leader>ff",
 				function()
 					Snacks.picker.files({
+						matcher = {
+							frecency = true,
+							cwd_bonus = true,
+							sort_empty = true,
+						},
 						hidden = true,
 						ignored = true,
 					})
@@ -136,6 +134,9 @@ return {
 							-- start in normal mode
 							vim.cmd.stopinsert()
 						end,
+						matcher = {
+							sort_empty = true,
+						},
 						sort_lastused = true,
 						win = {
 							input = {
@@ -245,6 +246,7 @@ return {
 				end,
 				desc = "[f]ind [u]ndo",
 			},
+			--#endregion
 		},
 	},
 }
