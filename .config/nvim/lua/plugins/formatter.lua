@@ -12,6 +12,7 @@ local prettier_filetypes = {
 	"yaml",
 	"markdown",
 	"graphql",
+	"astro",
 }
 
 local formatters = {
