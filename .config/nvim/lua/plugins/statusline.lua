@@ -37,6 +37,9 @@ return {
 					},
 				},
 				lualine_x = {
+					{
+						require("recorder").recordingStatus,
+					},
 					"encoding",
 					"filetype",
 				},
