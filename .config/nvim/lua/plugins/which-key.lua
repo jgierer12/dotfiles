@@ -18,11 +18,6 @@ return {
 					max = math.huge,
 				},
 			},
-			plugins = {
-				spelling = {
-					enabled = false,
-				},
-			},
 			icons = {
 				rules = false,
 				breadcrumb = " ", -- symbol used in the command line area that shows your active key combo
