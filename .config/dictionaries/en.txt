@@ -20037,3 +20037,6 @@ markdown
 revalidate
 min
 Figma
+symlink
+Astro
+Directus
