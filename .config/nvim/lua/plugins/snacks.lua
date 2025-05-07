@@ -14,6 +14,11 @@ return {
 					relative = "editor",
 					col = -1,
 				},
+				zen = {
+					backdrop = {
+						transparent = false,
+					},
+				},
 			},
 			words = { enabled = true },
 			scroll = {
