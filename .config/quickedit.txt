@@ -1,0 +1,5 @@
+~/dotfiles/
+~/dotfiles/.config/nvim/
+~/Documents/Notes/
+~/Documents/Notes/TODO.md
+~/Documents/Notes/Wishlist.md
