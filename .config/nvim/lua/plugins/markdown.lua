@@ -19,4 +19,27 @@ return {
 			},
 		},
 	},
+	{
+		"magnusriga/markdown-tools.nvim",
+		dependencies = {
+			"folke/snacks.nvim", -- Picker
+			{
+				"iamcco/markdown-preview.nvim",
+				cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+				build = "cd app && npm install",
+				init = function()
+					vim.g.mkdp_filetypes = { "markdown" }
+				end,
+				ft = { "markdown" },
+			},
+		},
+		opts = {
+			template_dir = vim.fn.expand("~/Documents/Notes/Templates"),
+			picker = "snacks",
+		},
+		keys = {
+			{ "<leader>mnt" },
+		},
+		ft = "markdown",
+	},
 }
