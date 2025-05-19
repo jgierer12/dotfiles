@@ -13,6 +13,7 @@ return {
 					"regex",
 					"html",
 					"php",
+					"sql",
 					"xml",
 					"css",
 					"json",
@@ -32,5 +33,8 @@ return {
 				highlight = { enable = true },
 			})
 		end,
+	},
+	{
+		"gbprod/php-enhanced-treesitter.nvim",
 	},
 }
