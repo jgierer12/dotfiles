@@ -1,0 +1,8 @@
+@astrojs/language-server
+@biomejs/biome
+@olrtg/emmet-language-server
+intelephense
+prettier
+typescript
+typescript-language-server
+vscode-langservers-extracted

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xargs pnpm install -g < $HOME/.config/pnpm-global-packages.txt

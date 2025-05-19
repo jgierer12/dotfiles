@@ -1,9 +1,0 @@
-#!/bin/bash
-
-pnpm add -g @astrojs/language-server
-pnpm add -g @biomejs/biome
-pnpm add -g emmet-ls
-pnpm add -g prettier
-pnpm add -g typescript
-pnpm add -g typescript-language-server
-
