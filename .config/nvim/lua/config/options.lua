@@ -9,12 +9,8 @@ vim.opt.textwidth = 80
 -- Sets how neovim will display certain whitespace characters in the editor.
 vim.opt.list = true
 vim.opt.listchars = {
-	-- eol = "↲",
 	tab = "» ",
-	lead = "⋅",
-	trail = "•",
-	extends = "❯",
-	precedes = "❮",
+	trail = "·",
 	nbsp = "␣",
 }
 
