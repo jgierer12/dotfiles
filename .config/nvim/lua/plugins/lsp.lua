@@ -31,6 +31,18 @@ return {
 					},
 				},
 				astro = {},
+				html = {},
+				intelephense = {},
+				emmet_language_server = {
+					filetypes = {
+						"astro",
+						"html",
+						"php",
+						"css",
+						"javascriptreact",
+						"typescriptreact",
+					},
+				},
 				-- ts_ls = {
 				-- 	root_dir = lspconfig.util.root_pattern("package.json"),
 				-- 	single_file_support = false,
