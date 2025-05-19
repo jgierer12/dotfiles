@@ -14,6 +14,13 @@ brew install node
 brew install deno
 brew install rustup
 brew install gleam
+brew install php
+
+# Docker
+brew install docker
+brew install docker-buildx
+brew install docker-compose
+brew install lazydocker
 
 # Language Tools
 brew install pnpm
@@ -21,6 +28,8 @@ brew install vscode-langservers-extracted
 brew install lua-language-server
 brew install stylua
 brew install marksman
+brew install harper
+brew install prettierd
 
 # Shell
 brew install fish
@@ -45,6 +54,13 @@ brew install glow
 brew install fastfetch
 brew install bat
 brew install numbat
+brew install magic-wormhole
+brew install mosh
+brew install sevenzip
+brew install zlib
+brew install tlrc
+brew install wordnet
+brew install yazi
 
 # Git
 brew install git
