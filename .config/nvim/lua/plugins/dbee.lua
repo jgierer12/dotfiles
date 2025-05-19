@@ -22,7 +22,7 @@ return {
 				function()
 					require("dbee").toggle()
 				end,
-				{ desc = "Toggle dbee" },
+				desc = "Toggle dbee",
 			},
 		},
 	},
