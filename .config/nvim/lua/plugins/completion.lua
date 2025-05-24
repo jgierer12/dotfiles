@@ -2,7 +2,6 @@ return {
 	{
 		"saghen/blink.cmp",
 		dependencies = {
-			"moyiz/blink-emoji.nvim",
 			{
 				"Kaiser-Yang/blink-cmp-dictionary",
 				dependencies = { "nvim-lua/plenary.nvim" },
@@ -37,20 +36,12 @@ return {
 				preset = "luasnip",
 			},
 			sources = {
-				default = { "lsp", "path", "snippets", "buffer", "emoji", "dictionary" },
+				default = { "lsp", "path", "snippets", "buffer", "dictionary" },
 				providers = {
 					buffer = {
 						module = "blink.cmp.sources.buffer",
 						name = "Buffer",
 						max_items = 3,
-					},
-					emoji = {
-						module = "blink-emoji",
-						name = "Emoji",
-						score_offset = 20,
-						opts = {
-							insert = true,
-						},
 					},
 					dictionary = {
 						module = "blink-cmp-dictionary",
