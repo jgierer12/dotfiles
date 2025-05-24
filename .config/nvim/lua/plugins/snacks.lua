@@ -160,6 +160,18 @@ return {
 				desc = "[f]ind [b]uffers",
 			},
 			{
+				"<leader>fj",
+				function()
+					Snacks.picker.jumps({
+						on_show = function()
+							-- start in normal mode
+							vim.cmd.stopinsert()
+						end,
+					})
+				end,
+				desc = "[f]ind [j]umps",
+			},
+			{
 				"<leader>fh",
 				function()
 					Snacks.picker.help()
