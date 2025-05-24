@@ -1,7 +1,7 @@
-vim.keymap.set("n", "<leader>ww", "<cmd>w<cr>", { desc = "[w]rite" })
-vim.keymap.set("n", "<leader>wq", "<cmd>wqa<cr>", { desc = "[w]rite and [q]uit all" })
-vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "[q]uit" })
-vim.keymap.set("n", "<leader>qa", "<cmd>qa<cr>", { desc = "[q]uit [a]ll" })
+vim.keymap.set("n", "<leader>w", "<cmd>w<cr>", { desc = "Write" })
+vim.keymap.set("n", "<leader>qq", "<cmd>q<cr>", { desc = "Quit window" })
+vim.keymap.set("n", "<leader>q!", "<cmd>qa!<cr>", { desc = "Force quit all windows" })
+vim.keymap.set("n", "<leader>qa", "<cmd>wqa<cr>", { desc = "Write and quit all windows" })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<cr>")
