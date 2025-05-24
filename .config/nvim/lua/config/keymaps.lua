@@ -28,3 +28,7 @@ vim.keymap.set("n", "z1", "zM", { desc = "Fold to level 1" })
 for i = 2, 9 do
 	vim.keymap.set("n", "z" .. i, "zM" .. i - 1 .. "zr", { desc = "Fold to level " .. i })
 end
+
+-- Add undo breakpoints when pressing enter in insert mode
+-- Moved to plugins/autopairs.lua
+-- vim.keymap.set("i", "<cr>", "<c-g>u<cr>")
