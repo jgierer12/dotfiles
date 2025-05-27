@@ -1,3 +1,11 @@
+-- disable indent guides in filetypes with few indents
+vim.api.nvim_create_autocmd({ "FileType" }, {
+	pattern = { "markdown" },
+	callback = function()
+		vim.b.snacks_indent = false
+	end,
+})
+
 return {
 	{
 		"folke/snacks.nvim",
