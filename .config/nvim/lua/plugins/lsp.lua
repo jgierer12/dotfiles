@@ -32,6 +32,7 @@ return {
 				},
 				astro = {},
 				html = {},
+				cssls = {},
 				intelephense = {},
 				emmet_language_server = {
 					filetypes = {
