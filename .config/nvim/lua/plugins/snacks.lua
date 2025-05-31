@@ -30,7 +30,7 @@ return {
 			},
 			words = { enabled = true },
 			scroll = {
-				enabled = true,
+				enabled = false,
 				animate = {
 					duration = { step = 10, total = 200 },
 					easing = "inOutQuad",
