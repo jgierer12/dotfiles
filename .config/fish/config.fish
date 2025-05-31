@@ -14,6 +14,7 @@ fish_add_path $HOME/.local/bin
 
 # Env Vars
 set -x EDITOR (which nvim)
+set -x VISUAL (which neovide)
 set -x SUDO_EDITOR $EDITOR
 
 # Keybinds
@@ -31,6 +32,7 @@ alias mkdir "mkdir -vp"
 alias ls "eza --all --icons --group-directories-first"
 alias tree "ls --tree --ignore-glob '.git|node_modules'"
 alias edit $EDITOR
+alias visual $VISUAL
 alias dots "stow . -d $HOME/dotfiles -t $HOME"
 
 if test "$TERM" = "xterm-kitty"
@@ -40,6 +42,7 @@ end
 # Abbreviations
 abbr --add --set-cursor c "calc '%'"
 abbr --add e "edit"
+abbr --add v "visual"
 abbr --add se "sudoedit"
 abbr --add ll "ls -l"
 abbr --add qq "exit"

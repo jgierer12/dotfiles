@@ -1,3 +1,7 @@
+if vim.g.neovide then
+	vim.opt.guifont = "JetBrainsMono Nerd Font:h14"
+end
+
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
