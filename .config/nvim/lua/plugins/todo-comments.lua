@@ -12,7 +12,7 @@ return {
 						---@diagnostic disable-next-line: undefined-field
 						Snacks.picker.todo_comments()
 					end,
-					desc = "[f]ind [t]odos",
+					desc = "find todos",
 				},
 			},
 		},

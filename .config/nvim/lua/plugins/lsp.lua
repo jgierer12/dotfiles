@@ -83,7 +83,7 @@ return {
 						return
 					end
 
-					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[c]ode [a]ction" })
+					vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
 
 					-- Change diagnostic symbols in the sign column (gutter)
 					local signs = { ERROR = "", WARN = "", INFO = "", HINT = "" }
@@ -104,7 +104,7 @@ return {
 				function()
 					require("live-rename").rename({ insert = true })
 				end,
-				desc = "[r]ename symbol",
+				desc = "Rename Symbol",
 			},
 		},
 	},

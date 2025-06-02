@@ -6,7 +6,7 @@ vim.keymap.set("n", "<leader>qa", "<cmd>wqa<cr>", { desc = "Write and quit all w
 -- Clear highlights on search when pressing <Esc> in normal mode
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<cr>")
 
-vim.keymap.set("n", "gb", "<c-t>", { desc = "[g]o [b]ack" })
+vim.keymap.set("n", "gb", "<c-t>", { desc = "go back" })
 
 vim.keymap.set("n", "<leader><leader>", "<c-6>", { desc = "Edit previous file" })
 

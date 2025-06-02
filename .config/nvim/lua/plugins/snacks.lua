@@ -64,14 +64,14 @@ return {
 				function()
 					Snacks.lazygit.open()
 				end,
-				desc = "Open Lazy[G]it",
+				desc = "Open Lazygit",
 			},
 			{
 				"<leader>t",
 				function()
 					Snacks.scratch({ icon = " ", name = "Todo", ft = "markdown", file = "~/Documents/Notes/TODO.md" })
 				end,
-				desc = "Open [T]odo List",
+				desc = "Open Todo List",
 			},
 			{
 				"\\|",
@@ -89,7 +89,7 @@ return {
 				function()
 					Snacks.zen.zen()
 				end,
-				desc = "[z]en mode",
+				desc = "Zen Mode",
 			},
 
 			--#region Pickers
@@ -100,7 +100,7 @@ return {
 						layout = "select",
 					})
 				end,
-				desc = "[f]ind [p]icker",
+				desc = "find picker",
 			},
 			{
 				"<leader>ff",
@@ -115,7 +115,7 @@ return {
 						ignored = true,
 					})
 				end,
-				desc = "[f]ind [f]iles",
+				desc = "find files",
 			},
 			{
 				mode = "n",
@@ -126,7 +126,7 @@ return {
 						ignored = true,
 					})
 				end,
-				desc = "[f]ind [g]rep",
+				desc = "find grep",
 			},
 			{
 				mode = "x",
@@ -137,7 +137,7 @@ return {
 						ignored = true,
 					})
 				end,
-				desc = "[f]ind [g]rep",
+				desc = "find grep",
 			},
 			{
 				"<leader>fb",
@@ -165,7 +165,7 @@ return {
 						},
 					})
 				end,
-				desc = "[f]ind [b]uffers",
+				desc = "find buffers",
 			},
 			{
 				"<leader>fj",
@@ -177,14 +177,14 @@ return {
 						end,
 					})
 				end,
-				desc = "[f]ind [j]umps",
+				desc = "find jumps",
 			},
 			{
 				"<leader>fh",
 				function()
 					Snacks.picker.help()
 				end,
-				desc = "[f]ind [h]elp",
+				desc = "find help",
 			},
 			{
 				"<leader>fk",
@@ -193,7 +193,7 @@ return {
 						layout = "select",
 					})
 				end,
-				desc = "[f]ind [k]eymaps",
+				desc = "find keymaps",
 			},
 			{
 				"<leader>fc",
@@ -202,21 +202,21 @@ return {
 						layout = "select",
 					})
 				end,
-				desc = "[f]ind [c]ommands",
+				desc = "find commands",
 			},
 			{
 				"<leader>fm",
 				function()
 					Snacks.picker.git_status()
 				end,
-				desc = "[f]ind [m]odified files",
+				desc = "find modified files",
 			},
 			{
 				"gd",
 				function()
 					Snacks.picker.lsp_definitions()
 				end,
-				desc = "[g]oto [d]efinition",
+				desc = "goto definition",
 			},
 			{
 				"<leader>fd",
@@ -225,7 +225,7 @@ return {
 						layout = "ivy_split",
 					})
 				end,
-				desc = "[f]ind [d]iagnostics (buffer)",
+				desc = "find diagnostics (buffer)",
 			},
 			{
 				"<leader>fD",
@@ -234,35 +234,35 @@ return {
 						layout = "ivy_split",
 					})
 				end,
-				desc = "[f]ind [d]iagnostics (workspace)",
+				desc = "find diagnostics (workspace)",
 			},
 			{
 				"<leader>fr",
 				function()
 					Snacks.picker.lsp_references()
 				end,
-				desc = "[f]ind [r]eferences",
+				desc = "find references",
 			},
 			{
 				"<leader>fs",
 				function()
 					Snacks.picker.lsp_symbols()
 				end,
-				desc = "[f]ind [s]ymbols (buffer)",
+				desc = "find symbols (buffer)",
 			},
 			{
 				"<leader>fS",
 				function()
 					Snacks.picker.lsp_workspace_symbols()
 				end,
-				desc = "[f]ind [s]ymbols (workspace)",
+				desc = "find symbols (workspace)",
 			},
 			{
 				"<leader>fq",
 				function()
 					Snacks.picker.qflist()
 				end,
-				desc = "[f]ind [q]uickfix",
+				desc = "find quickfix",
 			},
 			{
 				"<leader>fu",
@@ -274,7 +274,7 @@ return {
 						end,
 					})
 				end,
-				desc = "[f]ind [u]ndo",
+				desc = "find undo",
 			},
 			--#endregion
 		},
