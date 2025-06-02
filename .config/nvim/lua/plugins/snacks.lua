@@ -267,7 +267,12 @@ return {
 			{
 				"<leader>fu",
 				function()
-					Snacks.picker.undo()
+					Snacks.picker.undo({
+						on_show = function()
+							-- start in normal mode
+							vim.cmd.stopinsert()
+						end,
+					})
 				end,
 				desc = "[f]ind [u]ndo",
 			},
