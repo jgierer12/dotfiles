@@ -10,6 +10,7 @@ return {
 				{ "<leader>q", group = "[q]uit" },
 				{ "<leader>n", group = "[n]eovim config" },
 				{ "<leader>s", group = "[s]urround" },
+				{ "<leader>h", group = "[h]arpoon" },
 			},
 			preset = "helix",
 			delay = 0,
