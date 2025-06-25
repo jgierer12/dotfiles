@@ -15,6 +15,7 @@ return {
 					},
 				},
 			},
+			"b0o/schemastore.nvim",
 		},
 		config = function()
 			local lspconfig = require("lspconfig")
@@ -27,6 +28,14 @@ return {
 									"missing-fields",
 								},
 							},
+						},
+					},
+				},
+				jsonls = {
+					settings = {
+						json = {
+							schemas = require("schemastore").json.schemas(),
+							validate = { enable = true },
 						},
 					},
 				},
