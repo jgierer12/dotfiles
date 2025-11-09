@@ -1,14 +1,21 @@
-theme = catppuccin-mocha
-cursor-color = #cdd6f4
-cursor-text = #1e1e2e
+# https://ghostty.org/docs/config/reference
 
-font-family = JetBrainsMono Nerd Font
-font-size = 13
+theme = "Catppuccin Mocha"
+font-family = "JetBrainsMono Nerd Font"
+font-size = 12
 
-adjust-cursor-thickness = 2
+window-decoration = false
+window-padding-x = 6
+window-padding-y = 6
 
 mouse-hide-while-typing = true
 
-gtk-titlebar-hide-when-maximized = true
-adw-toolbar-style = raised-border
-window-padding-y = 6,0
+adjust-cursor-thickness = 2
+cursor-color = #cdd6f4
+cursor-text = #1e1e2e
+
+# Super fast startup when ghostty systemd service is enabled
+# Make sure to open new windows with `ghostty +new-window`
+# https://ghostty.org/docs/linux/systemd
+quit-after-last-window-closed = false
+
