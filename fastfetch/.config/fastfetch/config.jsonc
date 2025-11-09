@@ -14,7 +14,10 @@
   },
   "modules": [
     "title",
-    "datetime",
+    {
+      "type": "datetime",
+      "format": "{year}-{month-pretty}-{day-pretty} {hour-pretty}:{minute-pretty}:{second-pretty} UTC{offset-from-utc}",
+    },
     "os",
     "kernel",
     "memory",
@@ -22,5 +25,6 @@
     "packages",
     "uptime",
     "localip",
+    "battery",
   ],
 }
