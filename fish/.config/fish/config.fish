@@ -1,12 +1,6 @@
-# Cleanup
-functions --erase fastfetch # remove Bluefin fastfetch override
-
-# Third Party
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 starship init fish | source # prompt
 atuin init fish --disable-up-arrow | source # smarter history
 zoxide init fish --cmd cd | source # smarter cd
-set -x PNPM_HOME $HOME/.local/share/pnpm; fish_add_path $PNPM_HOME
 set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgrep/config
 
 # Path
@@ -14,7 +8,7 @@ fish_add_path $HOME/.local/bin
 
 # Env Vars
 set -x EDITOR (which nvim)
-set -x VISUAL (which neovide)
+# set -x VISUAL (which neovide)
 set -x SUDO_EDITOR $EDITOR
 
 # Keybinds
@@ -32,12 +26,8 @@ alias mkdir "mkdir -vp"
 alias ls "eza --all --icons --group-directories-first"
 alias tree "ls --tree --ignore-glob '.git|node_modules'"
 alias edit $EDITOR
-alias visual $VISUAL
+# alias visual $VISUAL
 alias dots "stow . -d $HOME/dotfiles -t $HOME"
-
-if test "$TERM" = "xterm-kitty"
-	alias ssh "kitten ssh"
-end
 
 # Abbreviations
 abbr --add --set-cursor c "calc '%'"
@@ -70,4 +60,3 @@ abbr --add gP "git push"
 function fish_greeting
 	fastfetch
 end
-
