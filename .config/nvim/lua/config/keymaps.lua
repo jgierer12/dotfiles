@@ -30,3 +30,6 @@ end
 -- Add undo breakpoints when pressing enter in insert mode
 -- Moved to plugins/autopairs.lua
 -- vim.keymap.set("i", "<cr>", "<c-g>u<cr>")
+
+-- LSP
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Action" })
