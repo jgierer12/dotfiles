@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+dir="${DOTFILES_DIR:-$PWD}"
+pkgs=$(find $dir -mindepth 1 -maxdepth 1 -type d ! -name ".*" -printf "%f\n")
+stow -v -R -d $dir -t $HOME $pkgs
