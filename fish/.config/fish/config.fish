@@ -8,7 +8,7 @@ fish_add_path $HOME/.local/bin
 
 # Env Vars
 set -x EDITOR (which nvim)
-# set -x VISUAL (which neovide)
+set -x VISUAL (which neovide)
 set -x SUDO_EDITOR $EDITOR
 
 # Keybinds
@@ -26,7 +26,7 @@ alias mkdir "mkdir -vp"
 alias ls "eza --all --icons --group-directories-first"
 alias tree "ls --tree --ignore-glob '.git|node_modules'"
 alias edit $EDITOR
-# alias visual $VISUAL
+alias visual $VISUAL
 alias dots "stow . -d $HOME/dotfiles -t $HOME"
 
 # Abbreviations
