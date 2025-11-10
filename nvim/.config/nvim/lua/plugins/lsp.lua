@@ -54,6 +54,8 @@ return {
 
 			vim.lsp.enable('marksman')
 
+			vim.lsp.enable('tinymist')
+
 			vim.lsp.enable('gleam')
 
 			-- harper_ls = {
