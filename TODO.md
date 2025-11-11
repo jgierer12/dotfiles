@@ -1,11 +1,10 @@
 - [ ] Merge packages where it makes sense (eg. lazygit into git)
 - [ ] Remove scripts I'm not using anymore
 - [ ] Write readme
-- [ ] Add new configs to repo
-    - [ ] niri
-    - [ ] systemd
-    - [ ] atuin
-    - [ ] btop
-    - [ ] hyprlock + hypridle
-    - [ ] mako
-    - [ ] vicinae
+- [x] Add new configs to repo
+    - [x] niri
+    - [x] systemd
+    - [x] btop
+    - [x] hyprlock + hypridle
+    - [x] mako
+    - [x] vicinae
