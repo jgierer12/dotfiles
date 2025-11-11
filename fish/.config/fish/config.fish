@@ -27,7 +27,6 @@ alias ls "eza --all --icons --group-directories-first"
 alias tree "ls --tree --ignore-glob '.git|node_modules'"
 alias edit $EDITOR
 alias visual $VISUAL
-alias dots "stow . -d $HOME/dotfiles -t $HOME"
 
 # Abbreviations
 abbr --add --set-cursor c "calc '%'"
