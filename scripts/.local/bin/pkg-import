@@ -21,7 +21,7 @@ fi
 if command -v flatpak &> /dev/null && [ -f "$dir/flatpak.list" ]; then
 	echo -e "\n\n=== Installing flatpak packages... ===\n"
 	while read remote app; do
-		flatpak install $remote $app
+		flatpak install -y $remote $app
 	done < "$dir/flatpak.list"
 fi
 
