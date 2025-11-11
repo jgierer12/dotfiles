@@ -207,6 +207,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 nss-mdns
 ntp
+obs-studio-browser
 octopi
 opencl-mesa
 openssh
@@ -255,8 +256,10 @@ swayosd
 swww
 sysfsutils
 system-config-printer
+tealdeer
 tecla
 texinfo
+thunderbird
 tinymist
 topgrade
 totem
