@@ -1,0 +1,16 @@
+window#osd {
+	background: alpha(#313244, 0.8);
+}
+
+window#osd image,
+label {
+	color: #cdd6f4;
+}
+
+window#osd progress {
+	background: #cdd6f4;
+}
+
+window#osd trough {
+	background: #7f849c;
+}
