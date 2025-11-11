@@ -1,6 +1,7 @@
 starship init fish | source # prompt
 atuin init fish --disable-up-arrow | source # smarter history
 zoxide init fish --cmd cd | source # smarter cd
+set -x PNPM_HOME $HOME/.local/share/pnpm; fish_add_path $PNPM_HOME
 set -x RIPGREP_CONFIG_PATH $HOME/.config/ripgrep/config
 
 # Path

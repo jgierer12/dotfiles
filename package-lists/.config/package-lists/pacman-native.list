@@ -159,6 +159,7 @@ pipewire-jack
 pipewire-pulse
 pkgfile
 plocate
+pnpm
 poppler-glib
 power-profiles-daemon
 pv
