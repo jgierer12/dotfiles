@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+dir="${XDG_CONFIG_HOME:-$HOME/.config}/package-lists"
+mkdir -p $dir
+
+if command -v pacman &>/dev/null; then
+	echo "Saving pacman native package list..."
+	pacman -Qqen > "$dir/pacman-native.list"
+
+	echo "Saving pacman foreign package list..."
+	pacman -Qqem > "$dir/pacman-foreign.list"
+fi
+
+if command -v flatpak &>/dev/null; then
+	echo "Saving flatpak package list..."
+	flatpak list --app --columns=origin,application | tail +1 > "$dir/flatpak.list"
+fi

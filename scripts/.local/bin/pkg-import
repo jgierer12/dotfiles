@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+dir="${XDG_CONFIG_HOME:-$HOME/.config}/package-lists"
+
+if [ ! -d "$dir" ]; then
+	echo "Package list directory not found at $dir"
+	exit 1
+fi
+
+if command -v pacman &>/dev/null && [ -f "$dir/pacman-native.list" ]; then
+	echo -e "\n\n=== Installing pacman native packages... ===\n"
+	sudo pacman -Syu --needed - < "$dir/pacman-native.list"
+fi
+
+if command -v yay &>/dev/null && [ -f "$dir/pacman-foreign.list" ]; then
+	echo -e "\n\n=== Installing pacman foreign packages with yay... ===\n"
+	yay -Syu --needed - < "$dir/pacman-foreign.list"
+fi
+
+if command -v flatpak &> /dev/null && [ -f "$dir/flatpak.list" ]; then
+	echo -e "\n\n=== Installing flatpak packages... ===\n"
+	while read remote app; do
+		flatpak install $remote $app
+	done < "$dir/flatpak.list"
+fi
