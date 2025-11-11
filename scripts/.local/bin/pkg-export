@@ -16,3 +16,8 @@ if command -v flatpak &>/dev/null; then
 	echo "Saving flatpak package list..."
 	flatpak list --app --columns=origin,application | tail +1 > "$dir/flatpak.list"
 fi
+
+if command -v pnpm &>/dev/null; then
+	echo "Saving pnpm package list..."
+	pnpm ls -g --depth=0 --json | jq -r '.[].dependencies | keys[]' > "$dir/pnpm.list"
+fi

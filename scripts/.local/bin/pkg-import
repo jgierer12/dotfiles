@@ -24,3 +24,8 @@ if command -v flatpak &> /dev/null && [ -f "$dir/flatpak.list" ]; then
 		flatpak install $remote $app
 	done < "$dir/flatpak.list"
 fi
+
+if command -v pnpm &>/dev/null && [ -f "$dir/pnpm.list" ]; then
+	echo -e "\n\n=== Installing pnpm packages... ===\n"
+	 cat "$dir/pnpm.list" | xargs pnpm add -g
+fi
