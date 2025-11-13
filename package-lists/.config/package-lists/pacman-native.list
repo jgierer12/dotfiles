@@ -37,6 +37,7 @@ cachyos-v3-mirrorlist
 cachyos-v4-mirrorlist
 cachyos-wallpapers
 cantarell-fonts
+cava
 chwd
 cpupower
 cryptsetup
@@ -75,6 +76,7 @@ foomatic-db-gutenprint-ppds
 foomatic-db-nonfree
 foomatic-db-nonfree-ppds
 foomatic-db-ppds
+fprintd
 fsarchiver
 fwupd
 fzf
@@ -144,9 +146,8 @@ haveged
 hdparm
 hwdetect
 hwinfo
-hypridle
-hyprlock
 hyprpicker
+i2c-tools
 inetutils
 iptables-nft
 iwd
@@ -158,6 +159,7 @@ lib32-mesa
 lib32-opencl-mesa
 lib32-vulkan-radeon
 libdvdcss
+libfprint
 libgsf
 libnma
 libopenraw
@@ -176,7 +178,6 @@ lsb-release
 lsscsi
 lua-language-server
 lvm2
-mako
 malcontent
 man-db
 man-pages
@@ -252,10 +253,9 @@ starship
 stow
 sudo
 sushi
-swayosd
-swww
 sysfsutils
 system-config-printer
+tailscale
 tealdeer
 tecla
 texinfo
@@ -304,4 +304,5 @@ xwayland-satellite
 yay
 yazi
 yelp
+yt-dlp
 zoxide
