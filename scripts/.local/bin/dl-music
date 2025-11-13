@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+yt-dlp --extract-audio --audio-format mp3 --output "%(channel)s - %(title)s.%(ext)s" ${@:-$(wl-paste)}
