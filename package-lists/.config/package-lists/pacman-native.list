@@ -229,11 +229,13 @@ pnpm
 poppler-glib
 power-profiles-daemon
 profile-sync-daemon
+progress
 pv
 python
 python-defusedxml
 python-packaging
 qt6-wayland
+rclone
 rebuild-detector
 reflector
 ripgrep
