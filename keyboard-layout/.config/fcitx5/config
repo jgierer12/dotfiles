@@ -25,10 +25,10 @@ ModifierOnlyKeyTimeout=250
 0=Shift_L
 
 [Hotkey/EnumerateGroupForwardKeys]
-0=Super+space
+0=Alt+space
 
 [Hotkey/EnumerateGroupBackwardKeys]
-0=Shift+Super+space
+0=Alt+Shift+space
 
 [Hotkey/PrevPage]
 0=Up
