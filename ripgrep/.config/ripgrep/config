@@ -2,4 +2,4 @@
 --hidden
 --no-ignore
 --glob=!**/{.git,node_modules}/*
-
+--ignore-case
