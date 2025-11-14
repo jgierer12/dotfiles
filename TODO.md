@@ -2,9 +2,10 @@
 - [ ] Remove scripts I'm not using anymore
 - [ ] Write readme
 - [x] Add new configs to repo
-    - [x] niri
-    - [x] systemd
-    - [x] btop
-    - [x] hyprlock + hypridle
-    - [x] mako
-    - [x] vicinae
+  - [x] niri
+  - [x] systemd
+  - [x] btop
+  - [x] hyprlock + hypridle
+  - [x] mako
+  - [x] vicinae
+- [ ] Figure out a better way to store /etc/environment
