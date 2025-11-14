@@ -1,7 +1,3 @@
-if vim.g.neovide then
-	vim.opt.guifont = "Maple Mono Normal NF CN:h12"
-end
-
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 
