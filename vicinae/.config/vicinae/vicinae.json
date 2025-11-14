@@ -1,23 +1,24 @@
 {
-  "closeOnFocusLoss": false,
-  "faviconService": "twenty",
-  "font": {
-    "normal": "Maple Mono Normal NF CN",
-    "size": 12
-  },
-  "keybinding": "default",
-  "keybinds": {},
-  "popToRootOnClose": true,
-  "rootSearch": {
-    "searchFiles": false
-  },
-  "theme": {
-    "iconTheme": "Papirus",
-    "name": "catppuccin-mocha"
-  },
-  "window": {
-    "csd": true,
-    "opacity": 1,
-    "rounding": 8
-  }
+    "closeOnFocusLoss": false,
+    "faviconService": "twenty",
+    "font": {
+        "normal": "Maple Mono Normal NF CN",
+        "size": 12
+    },
+    "keybinding": "default",
+    "keybinds": {
+    },
+    "popToRootOnClose": true,
+    "rootSearch": {
+        "searchFiles": false
+    },
+    "theme": {
+        "iconTheme": "Papirus",
+        "name": "catppuccin-mocha"
+    },
+    "window": {
+        "csd": true,
+        "opacity": 1,
+        "rounding": 8
+    }
 }
