@@ -6,9 +6,9 @@ return {
 		opts = {
 			diagnostic = {
 				options = {
-					float = false
-				}
-			}
+					float = false,
+				},
+			},
 		},
 	},
 }

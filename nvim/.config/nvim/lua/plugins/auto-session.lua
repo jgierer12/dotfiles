@@ -7,6 +7,6 @@ return {
 		end,
 		opts = {
 			suppressed_dirs = { "~/", "~/Downloads", "/" },
-		}
+		},
 	},
 }

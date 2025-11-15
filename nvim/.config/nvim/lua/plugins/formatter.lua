@@ -42,7 +42,7 @@ for _, ft in ipairs(prettier_filetypes) do
 	formatters[ft] = { stop_after_first = true, "prettierd", "prettier" }
 end
 for _, ft in ipairs(biome_filetypes) do
-	if (not formatters[ft]) then
+	if not formatters[ft] then
 		formatters[ft] = {}
 	end
 	table.insert(formatters[ft], "biome")
@@ -61,7 +61,7 @@ return {
 				},
 				prettier = {
 					require_cwd = true,
-				}
+				},
 			},
 			notify_on_error = false,
 			format_on_save = {

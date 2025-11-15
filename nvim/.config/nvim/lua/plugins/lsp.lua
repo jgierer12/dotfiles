@@ -5,9 +5,9 @@ return {
 			"b0o/SchemaStore.nvim",
 		},
 		config = function()
-			vim.lsp.enable('ts_ls')
+			vim.lsp.enable("ts_ls")
 
-			vim.lsp.config('jsonls', {
+			vim.lsp.config("jsonls", {
 				settings = {
 					json = {
 						schemas = require("schemastore").json.schemas(),
@@ -15,9 +15,9 @@ return {
 					},
 				},
 			})
-			vim.lsp.enable('jsonls')
+			vim.lsp.enable("jsonls")
 
-			vim.lsp.config('lua_ls', {
+			vim.lsp.config("lua_ls", {
 				settings = {
 					Lua = {
 						diagnostics = {
@@ -28,17 +28,17 @@ return {
 					},
 				},
 			})
-			vim.lsp.enable('lua_ls')
+			vim.lsp.enable("lua_ls")
 
-			vim.lsp.enable('astro')
+			vim.lsp.enable("astro")
 
-			vim.lsp.enable('html')
+			vim.lsp.enable("html")
 
-			vim.lsp.enable('cssls')
+			vim.lsp.enable("cssls")
 
 			-- vim.lsp.enable('intelephense')
 
-			vim.lsp.config('emmet_language_server', {
+			vim.lsp.config("emmet_language_server", {
 				filetypes = {
 					"astro",
 					"html",
@@ -48,15 +48,15 @@ return {
 					"typescriptreact",
 				},
 			})
-			vim.lsp.enable('emmet_language_server')
+			vim.lsp.enable("emmet_language_server")
 
-			vim.lsp.enable('rust_analyzer')
+			vim.lsp.enable("rust_analyzer")
 
-			vim.lsp.enable('marksman')
+			vim.lsp.enable("marksman")
 
-			vim.lsp.enable('tinymist')
+			vim.lsp.enable("tinymist")
 
-			vim.lsp.enable('gleam')
+			vim.lsp.enable("gleam")
 
 			-- harper_ls = {
 			-- 	filetypes = { "markdown" },
@@ -84,7 +84,7 @@ return {
 				-- See the configuration section for more details
 				-- Load luvit types when the `vim.uv` word is found
 				{ path = "${3rd}/luv/library", words = { "vim%.uv" } },
-				{ path = "snacks.nvim",        words = { "Snacks" } },
+				{ path = "snacks.nvim", words = { "Snacks" } },
 			},
 		},
 	},
