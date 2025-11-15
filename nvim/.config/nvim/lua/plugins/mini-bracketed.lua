@@ -3,6 +3,12 @@ return {
 		"nvim-mini/mini.bracketed",
 		version = "*",
 		event = "VeryLazy",
-		opts = {},
+		opts = {
+			diagnostic = {
+				options = {
+					float = false
+				}
+			}
+		},
 	},
 }
