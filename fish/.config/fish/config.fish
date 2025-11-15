@@ -31,7 +31,7 @@ alias edit $EDITOR
 alias visual $VISUAL
 
 # Abbreviations
-abbr --add --set-cursor c "calc '%'"
+abbr --add --set-cursor c "qalc '%'"
 abbr --add e "edit"
 abbr --add v "visual"
 abbr --add se "sudoedit"
