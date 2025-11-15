@@ -104,6 +104,12 @@ window-rule {
     opacity 0.95
 }
 
+window-rule {
+    match is-floating=true
+    exclude is-active=true
+    opacity 0.5
+}
+
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
