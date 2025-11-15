@@ -94,6 +94,7 @@ window-rule {
     match app-id=r#"firefox$"#
     match app-id=r#"^neovide$"#
     match app-id=r#"^org\.mozilla\.Thunderbird$"#
+    match app-id=r#"Anki$"#
     open-maximized true
 }
 
