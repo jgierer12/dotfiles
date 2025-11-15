@@ -27,6 +27,7 @@ alias cp "cp -riv"
 alias mkdir "mkdir -vp"
 alias ls "eza --all --icons --group-directories-first"
 alias tree "ls --tree --ignore-glob '.git|node_modules'"
+alias top "btop --preset 0"
 alias edit $EDITOR
 alias visual $VISUAL
 
