@@ -1,6 +1,6 @@
 return {
 	{
-		"echasnovski/mini.basics",
+		"nvim-mini/mini.basics",
 		version = "*",
 		opts = {
 			mappings = {

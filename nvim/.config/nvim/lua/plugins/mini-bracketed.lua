@@ -1,6 +1,6 @@
 return {
 	{
-		"echasnovski/mini.bracketed",
+		"nvim-mini/mini.bracketed",
 		version = "*",
 		event = "VeryLazy",
 		opts = {},
