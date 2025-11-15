@@ -110,8 +110,7 @@ window-rule {
 }
 
 window-rule {
-    match is-floating=true
-    exclude is-active=true
+    match is-floating=true is-active=false
     opacity 0.5
 }
 
