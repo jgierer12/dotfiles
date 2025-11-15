@@ -8,4 +8,4 @@
   - [x] hyprlock + hypridle
   - [x] mako
   - [x] vicinae
-- [ ] Figure out a better way to store /etc/environment
+- [x] Figure out a better way to store /etc/environment
