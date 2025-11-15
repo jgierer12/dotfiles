@@ -11,6 +11,7 @@ fish_add_path $HOME/.local/bin
 set -x EDITOR (which nvim)
 set -x VISUAL (which neovide)
 set -x SUDO_EDITOR $EDITOR
+set -x SSH_AUTH_SOCK "$HOME/.1password/agent.sock"
 
 # Keybinds
 fish_vi_key_bindings
