@@ -1,5 +1,6 @@
 @astrojs/language-server
 @biomejs/biome
+@fsouza/prettierd
 @olrtg/emmet-language-server
 typescript-language-server
 vscode-langservers-extracted
