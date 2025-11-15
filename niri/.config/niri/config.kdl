@@ -99,6 +99,12 @@ window-rule {
 }
 
 window-rule {
+    match app-id=r#"Anki$"# title="^Statistics$"
+    open-floating false
+    open-maximized false
+}
+
+window-rule {
     match is-active=false
     opacity 0.95
 }
