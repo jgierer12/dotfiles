@@ -156,6 +156,7 @@ libfprint
 libgsf
 libnma
 libopenraw
+libqalculate
 libwnck3
 limine
 limine-mkinitcpio-hook
