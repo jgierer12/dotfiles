@@ -99,8 +99,6 @@ window-rule {
 
 window-rule {
     match is-active=false
-    // exclude app-id=r#"firefox$"#
-
     opacity 0.95
 }
 
@@ -240,6 +238,7 @@ binds {
 }
 
 debug {
-    // Allows notification actions and window activation from Noctalia.
+    // Allows notification actions and window activation
+    // https://yalter.github.io/niri/Configuration%3A-Debug-Options.html#honor-xdg-activation-with-invalid-serial
     honor-xdg-activation-with-invalid-serial
 }
