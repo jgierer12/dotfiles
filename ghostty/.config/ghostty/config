@@ -1,7 +1,7 @@
 # https://ghostty.org/docs/config/reference
 
 theme = "Catppuccin Mocha"
-font-family = "Maple Mono Normal NF CN"
+font-family = "Maple Mono Normal NF"
 font-size = 12
 
 window-decoration = false
