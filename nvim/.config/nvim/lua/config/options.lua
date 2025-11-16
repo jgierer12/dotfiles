@@ -49,3 +49,13 @@ for type, icon in pairs(signs) do
 	diagnostic_signs[vim.diagnostic.severity[type]] = icon
 end
 vim.diagnostic.config({ signs = { text = diagnostic_signs } })
+
+-- Set title and update on cd
+vim.opt.title = true
+local set_title = function()
+	vim.opt.titlestring = "nvim · " .. vim.fs.basename(vim.fn.getcwd())
+end
+set_title()
+vim.api.nvim_create_autocmd("DirChanged", {
+	callback = set_title,
+})
