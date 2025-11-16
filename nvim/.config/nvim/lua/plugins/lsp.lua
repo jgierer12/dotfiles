@@ -52,6 +52,8 @@ return {
 
 			vim.lsp.enable("rust_analyzer")
 
+			vim.lsp.enable("zls")
+
 			vim.lsp.enable("marksman")
 
 			vim.lsp.enable("tinymist")
