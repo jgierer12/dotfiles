@@ -7,6 +7,8 @@ return {
 		end,
 		opts = {
 			suppressed_dirs = { "~/", "~/Downloads", "/" },
+			cwd_change_handling = true,
+			bypass_save_filetypes = { "snacks_dashboard" },
 		},
 	},
 }
