@@ -138,13 +138,15 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
     Mod+Shift+E { quit; }
     Mod+O repeat=false { toggle-overview; }
+    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
+    Super+Tab hotkey-overlay-title="Open Window Switcher" { spawn "vicinae" "vicinae://extensions/vicinae/wm/switch-windows"; }
 
     // === Applications ===
     Mod+Space hotkey-overlay-title="Toggle Launcher" { spawn "vicinae" "toggle"; }
     Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty" "+new-window"; }
+    Mod+N hotkey-overlay-title="Open Neovide" { spawn "neovide"; }
     Mod+B hotkey-overlay-title="Open Browser" { spawn "firefox"; }
     Mod+E hotkey-overlay-title="Open File Manager" { spawn "nautilus" "-w"; }
-    Super+Alt+L hotkey-overlay-title="Lock Screen" { spawn "dms" "ipc" "call" "lock" "lock"; }
 
     // === Media ===
     XF86AudioRaiseVolume allow-when-locked=true { spawn "dms" "ipc" "call" "audio" "increment" "3"; }
