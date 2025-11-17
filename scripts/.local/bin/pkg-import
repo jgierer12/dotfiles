@@ -13,6 +13,8 @@ if command -v pacman &>/dev/null && [ -f "$dir/pacman-native.list" ]; then
 	sudo pacman -Syu --needed - < "$dir/pacman-native.list"
 fi
 
+# TODO: Switch to paru once this fix is released
+# https://github.com/Morganamilo/paru/issues/1381
 if command -v yay &>/dev/null && [ -f "$dir/pacman-foreign.list" ]; then
 	echo -e "\n\n=== Installing pacman foreign packages with yay... ===\n"
 	yay -Syu --needed - < "$dir/pacman-foreign.list"
