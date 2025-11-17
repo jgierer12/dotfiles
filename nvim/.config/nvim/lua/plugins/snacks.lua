@@ -66,6 +66,9 @@ return {
 					{ section = "startup" },
 				},
 			},
+			picker = {
+				ui_select = true,
+			},
 		},
 		keys = {
 			{
