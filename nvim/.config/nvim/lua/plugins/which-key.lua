@@ -9,7 +9,7 @@ return {
 				{ "<leader>w", group = "Write" },
 				{ "<leader>q", group = "Quit" },
 				{ "<leader>s", group = "Surround" },
-				{ "<leader>h", group = "Harpoon" },
+				-- { "<leader>h", group = "Harpoon" },
 				{ "<leader>m", group = "Markdown" },
 				{ "<leader>R", group = "Kulala" },
 			},
