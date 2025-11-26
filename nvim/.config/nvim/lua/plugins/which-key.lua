@@ -11,6 +11,7 @@ return {
 				{ "<leader>s", group = "Surround" },
 				-- { "<leader>h", group = "Harpoon" },
 				{ "<leader>m", group = "Markdown" },
+				{ "<leader>g", group = "Git" },
 				{ "<leader>R", group = "Kulala" },
 			},
 			preset = "helix",
