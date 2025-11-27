@@ -23,6 +23,14 @@ input {
     }
 }
 
+cursor {
+    // Hide cursor when typing or after 2s
+    // But make it large so it's easy to find again
+    xcursor-size 36
+    hide-when-typing
+    hide-after-inactive-ms 2000
+}
+
 gestures {
     hot-corners {
         off
