@@ -11,3 +11,12 @@ customCommands:
     command: gh browse "{{ .SelectedLocalCommit.Sha }}"
     context: commits
     description: Browse commit on GitHub
+  - key: g
+    command: git commit -m "{{ .Form.CommitMessage }}"
+    context: files
+    description: Commit with AI-generated message
+    prompts:
+      - type: input
+        title: Commit Message
+        key: CommitMessage
+        initialValue: "{{ runCommand \"gen-commit\" }}"
