@@ -1,3 +1,0 @@
-#!/bin/bash
-
-pnpm ls -g --depth=0 --json | jq -r '.[].dependencies | keys[]' > $HOME/.config/pnpm-global-packages.txt
