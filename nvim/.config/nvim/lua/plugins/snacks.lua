@@ -90,13 +90,13 @@ return {
 				end,
 				desc = "Open Lazygit",
 			},
-			{
-				"<leader>t",
-				function()
-					Snacks.scratch({ icon = " ", name = "Todo", ft = "markdown", file = "~/Documents/Notes/TODO.md" })
-				end,
-				desc = "Open Todo List",
-			},
+			-- {
+			-- 	"<leader>t",
+			-- 	function()
+			-- 		Snacks.scratch({ icon = " ", name = "Todo", ft = "markdown", file = "~/Documents/Notes/TODO.md" })
+			-- 	end,
+			-- 	desc = "Open Todo List",
+			-- },
 			{
 				"\\|",
 				function()
