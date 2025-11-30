@@ -1,5 +1,5 @@
 - [ ] Merge packages where it makes sense (eg. lazygit into git)
-- [ ] Remove scripts I'm not using anymore
+- [x] Remove scripts I'm not using anymore
 - [ ] Write readme
 - [x] Add new configs to repo
   - [x] niri
@@ -8,4 +8,5 @@
   - [x] hyprlock + hypridle
   - [x] mako
   - [x] vicinae
+  - [ ] DMS
 - [x] Figure out a better way to store /etc/environment
