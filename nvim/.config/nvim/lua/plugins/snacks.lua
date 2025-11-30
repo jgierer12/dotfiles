@@ -14,10 +14,6 @@ return {
 		---@type snacks.Config
 		opts = {
 			styles = {
-				lazygit = {
-					border = "rounded",
-					backdrop = false,
-				},
 				snacks_image = {
 					relative = "editor",
 					col = -1,
@@ -83,13 +79,6 @@ return {
 			},
 		},
 		keys = {
-			{
-				"<leader>gg",
-				function()
-					Snacks.lazygit.open()
-				end,
-				desc = "Open Lazygit",
-			},
 			-- {
 			-- 	"<leader>t",
 			-- 	function()

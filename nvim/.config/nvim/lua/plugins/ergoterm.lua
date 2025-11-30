@@ -18,7 +18,7 @@ return {
 				sticky = true,
 			})
 
-			vim.keymap.set("n", "<leader>tg", function()
+			vim.keymap.set("n", "<leader>gg", function()
 				lazygit:focus()
 			end, { desc = "Focus Lazygit Terminal" })
 
@@ -29,11 +29,11 @@ return {
 				sticky = true,
 			})
 
-			vim.keymap.set("n", "<leader>ty", function()
+			vim.keymap.set("n", "<leader>e", function()
 				yazi:focus("below")
 			end, { desc = "Focus Yazi Below" })
 
-			vim.keymap.set("n", "<leader>tY", function()
+			vim.keymap.set("n", "<leader>E", function()
 				yazi:focus("float")
 			end, { desc = "Focus Yazi Floating" })
 		end,
