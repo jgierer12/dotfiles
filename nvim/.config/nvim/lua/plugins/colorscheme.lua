@@ -16,6 +16,7 @@ return {
 					which_key = true,
 					noice = true,
 				},
+				term_colors = true,
 			})
 
 			vim.cmd.colorscheme("catppuccin")
