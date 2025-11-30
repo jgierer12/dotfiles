@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Use Gemini to generate commit message for staged diff
+
+gemini_key="$GEMINI_API_KEY"
+gemini_model="gemini-flash-lite-latest"
+char_limit=200000 # approx. 100k tokens
+
+if [ -z "$gemini_key" ]; then
+  echo "Error: GEMINI_API_KEY variable not defined"
+  exit 1
+fi
+
+if ! git rev-parse 2>/dev/null; then
+  echo "Error: Not a git repository"
+  exit 1
+fi
+
+git_diff="$(git --no-pager diff --staged)"
+git_hist="$(git --no-pager log -10 --oneline 2>/dev/null || echo "")"
+
+if [ -z "$git_diff" ]; then
+  echo "Error: No staged changes"
+  exit 1
+fi
+
+if [ $(echo "$git_diff" | wc -m) -gt $char_limit ]; then
+  echo "Error: Diff too long"
+  exit 1
+fi
+
+if [ -z "$git_hist" ]; then
+  echo "Initial commit"
+  exit 0
+fi
+
+prompt_system="You are a git commit message generator. Based on the git diff and history provided in your input, generate a commit message for the diff that matches the style of the commit history."
+prompt_user="
+## History
+\`\`\`
+$git_hist
+\`\`\`
+
+## Diff
+\`\`\`
+$git_diff
+\`\`\`
+"
+
+escape_json_string() {
+  echo "$1" | jq -Rs
+}
+
+response=$(curl -s \
+-X POST \
+-H "x-goog-api-key: $gemini_key" \
+-H "Content-Type: application/json" \
+"https://generativelanguage.googleapis.com/v1beta/models/$gemini_model:generateContent" -d @- << EOF
+{
+  "contents": [
+    {
+      "parts": [
+        {
+          "text": $(escape_json_string "$prompt_user")
+        },
+      ]
+    },
+  ],
+  "systemInstruction": {
+    "parts": [
+      {
+        "text": $(escape_json_string "$prompt_system")
+      }
+    ]
+  }
+}
+EOF
+)
+
+echo "$response" | jq -r ".candidates[0].content.parts[0].text"
