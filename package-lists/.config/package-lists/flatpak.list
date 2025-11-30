@@ -1,3 +1,4 @@
+flathub	com.dec05eba.gpu_screen_recorder
 flathub	com.github.tchx84.Flatseal
 flathub	com.github.wwmm.easyeffects
 flathub	com.rustdesk.RustDesk
@@ -5,9 +6,11 @@ flathub	com.valvesoftware.Steam
 flathub	com.vivaldi.Vivaldi
 flathub	dev.vencord.Vesktop
 flathub	io.github.kolunmi.Bazaar
+flathub	io.github.nozwock.Packet
 flathub	io.github.seadve.Kooha
 flathub	io.github.v81d.Wattage
 flathub	net.ankiweb.Anki
 flathub	net.lrclib.lrcget
 flathub	org.libreoffice.LibreOffice
 flathub	org.musicbrainz.Picard
+flathub	us.zoom.Zoom

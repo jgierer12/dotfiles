@@ -2,5 +2,6 @@
 @biomejs/biome
 @fsouza/prettierd
 @olrtg/emmet-language-server
+bun
 typescript-language-server
 vscode-langservers-extracted
