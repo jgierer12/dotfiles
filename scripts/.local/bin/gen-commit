@@ -35,7 +35,7 @@ if [ -z "$git_hist" ]; then
   exit 0
 fi
 
-prompt_system="You are a git commit message generator. Based on the git diff and history provided in your input, generate a commit message for the diff that matches the style of the commit history."
+prompt_system="You are a git commit message generator. Based on the git diff and history provided in your input, generate a commit message for the diff that matches the style of the commit history. Try to keep the message to one line of 80 characters, only add extra lines for complex changes that cannot be described in a single line."
 prompt_user="
 ## History
 \`\`\`
