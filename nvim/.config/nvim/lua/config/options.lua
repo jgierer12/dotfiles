@@ -59,3 +59,10 @@ set_title()
 vim.api.nvim_create_autocmd("DirChanged", {
 	callback = set_title,
 })
+
+-- Exit snippet navigation when leaving insert mode
+vim.api.nvim_create_autocmd("InsertLeave", {
+	callback = function()
+		vim.snippet.stop()
+	end,
+})
