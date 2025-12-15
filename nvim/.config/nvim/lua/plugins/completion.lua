@@ -6,6 +6,7 @@ return {
 				"Kaiser-Yang/blink-cmp-dictionary",
 				dependencies = { "nvim-lua/plenary.nvim" },
 			},
+			"rafamadriz/friendly-snippets",
 		},
 		version = "*",
 		opts = {
@@ -32,9 +33,6 @@ return {
 					auto_show = true,
 				},
 			},
-			snippets = {
-				preset = "luasnip",
-			},
 			sources = {
 				default = { "lsp", "path", "snippets", "buffer", "dictionary" },
 				providers = {
@@ -52,6 +50,14 @@ return {
 						opts = {
 							dictionary_files = {
 								vim.fn.expand("~/.config/dictionaries/en.txt"),
+							},
+						},
+					},
+					snippets = {
+						opts = {
+							friendly_snippets = true,
+							extended_filetypes = {
+								astro = { "typescript", "html" },
 							},
 						},
 					},
