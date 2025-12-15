@@ -11,6 +11,7 @@ return {
 				{ "<leader>s", group = "Surround" },
 				-- { "<leader>h", group = "Harpoon" },
 				{ "<leader>m", group = "Markdown" },
+				{ "<leader>t", group = "Typst" },
 				{ "<leader>g", group = "Git" },
 				{ "<leader>R", group = "Kulala" },
 			},
