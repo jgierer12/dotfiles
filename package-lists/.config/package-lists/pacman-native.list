@@ -229,6 +229,7 @@ python
 python-defusedxml
 python-packaging
 qt6-wayland
+quickshell
 rclone
 rebuild-detector
 reflector
