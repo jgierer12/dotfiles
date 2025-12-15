@@ -10,7 +10,7 @@ Type=notify
 ExecStart=rclone mount --vfs-cache-mode full --vfs-cache-max-size 50G --transfers 16 --vfs-read-ahead 16M nextcloud:/ /mnt/Nextcloud
 
 # Perform lazy unmount
-ExecStop=fusermount -zu %h/Nextcloud
+ExecStop=fusermount3 -zu /mnt/Nextcloud
 
 # Restart the service whenever rclone exists with non-zero exit code
 Restart=on-failure
